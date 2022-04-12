@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Abetment.jnlp">
+  <information>
+    <title>Abetment</title>
+    <vendor>Al Throx</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Abetment.jar" size="2774313" download="eager" />
+    <jar href="lib\derby.jar" size="3104883" download="eager" />
+    <jar href="lib\derbyclient.jar" size="585704" download="eager" />
+    <jar href="lib\derbynet.jar" size="266471" download="eager" />
+    <jar href="lib\jfoenix-8.0.2.jar" size="2442326" download="eager" />
+    <jar href="lib\rs2xml.jar" size="171578" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Abetment" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="abetment.Abetment"  name="Abetment" />
+  <update check="always"/>
+</jnlp>

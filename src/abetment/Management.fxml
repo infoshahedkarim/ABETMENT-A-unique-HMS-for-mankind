@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abetment.ManagementController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/BG%20FOR%20ALL.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="214.0" fitWidth="214.0" layoutX="72.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/17.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="168.0" layoutX="583.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/15.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="172.0" layoutX="346.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="211.0" fitWidth="211.0" layoutX="805.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/5.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="73.0" layoutY="404.0" mnemonicParsing="false" onAction="#ot" prefHeight="32.0" prefWidth="210.0" style="-fx-background-color: #ffffff;" text="Operation Theater" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="346.0" layoutY="404.0" mnemonicParsing="false" onAction="#bioLab" prefHeight="32.0" prefWidth="166.0" style="-fx-background-color: #ffffff;" text="Bio Laboratory " textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="583.0" layoutY="404.0" mnemonicParsing="false" onAction="#chemLab" prefHeight="32.0" prefWidth="166.0" style="-fx-background-color: #ffffff;" text="Chem Laboratory " textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="805.0" layoutY="404.0" mnemonicParsing="false" onAction="#radioLab" prefHeight="32.0" prefWidth="210.0" style="-fx-background-color: #ffffff;" text="Radiology" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="961.0" layoutY="540.0" mnemonicParsing="false" onAction="#exit" prefHeight="8.0" prefWidth="82.0" style="-fx-background-color: #ffffff;" text="Exit " textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="914.0" layoutY="44.0" mnemonicParsing="false" onAction="#logout" prefHeight="22.0" prefWidth="118.0" style="-fx-background-color: #ffffff;" text="Logout" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="48.0" layoutY="44.0" mnemonicParsing="false" onAction="#b2h" prefHeight="22.0" prefWidth="118.0" style="-fx-background-color: #ffffff;" text="Back to Home" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

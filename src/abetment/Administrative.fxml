@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abetment.AdministrativeController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/admin%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="152.0" layoutX="131.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="152.0" layoutX="760.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="199.0" layoutX="616.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/9.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="252.0" fitWidth="152.0" layoutX="456.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="147.0" layoutX="283.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/2.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="88.0" layoutY="266.0" mnemonicParsing="false" onAction="#ClassicControl" prefHeight="34.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="Classic Control" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="716.0" layoutY="269.0" mnemonicParsing="false" onAction="#InternalServices" prefHeight="34.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="Internal Services" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="413.0" layoutY="268.0" mnemonicParsing="false" onAction="#dL" prefHeight="34.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="Doctor List" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="242.0" layoutY="505.0" mnemonicParsing="false" onAction="#medi_bd" prefHeight="34.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="Medicine" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="580.0" layoutY="504.0" mnemonicParsing="false" onAction="#GeneralPatients" prefHeight="34.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="General Patients" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="866.0" layoutY="46.0" mnemonicParsing="false" onAction="#logout" prefHeight="17.0" prefWidth="161.0" style="-fx-background-color: #ffffff;" text="Logout" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="54.0" layoutY="48.0" mnemonicParsing="false" onAction="#b2h" prefHeight="17.0" prefWidth="161.0" style="-fx-background-color: #ffffff;" text="Back to Home" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="946.0" layoutY="531.0" mnemonicParsing="false" onAction="#exit" prefHeight="23.0" prefWidth="88.0" style="-fx-background-color: #ffffff;" text="Exit" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

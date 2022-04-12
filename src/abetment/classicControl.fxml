@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abetment.ClassicControlController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/BG%20FOR%20ALL.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="197.0" layoutX="622.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="203.0" layoutX="269.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/14.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="197.0" layoutX="269.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/11.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="197.0" layoutX="622.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/9.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="270.0" layoutY="264.0" mnemonicParsing="false" onAction="#inPatient" prefHeight="26.0" prefWidth="195.0" style="-fx-background-color: #ffffff;" text="In Patients" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="623.0" layoutY="264.0" mnemonicParsing="false" onAction="#outPatient" prefHeight="26.0" prefWidth="195.0" style="-fx-background-color: #ffffff;" text="Out Patient" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="270.0" layoutY="524.0" mnemonicParsing="false" onAction="#staff" prefHeight="26.0" prefWidth="195.0" style="-fx-background-color: #ffffff;" text="Staffs" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="623.0" layoutY="524.0" mnemonicParsing="false" onAction="#nurse" prefHeight="26.0" prefWidth="195.0" style="-fx-background-color: #ffffff;" text="Nurses" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="35.0" layoutY="33.0" mnemonicParsing="false" onAction="#b2h" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" text="Back to Home" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="891.0" layoutY="33.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" text="Logout" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="957.0" layoutY="539.0" mnemonicParsing="false" onAction="#exit" prefHeight="16.0" prefWidth="83.0" style="-fx-background-color: #ffffff;" text="Exit" textAlignment="JUSTIFY" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

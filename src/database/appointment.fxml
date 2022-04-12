@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.AppointmentController">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="1202.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/database%20bg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="158.0" text="Patient's Name:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patientsNameTF" layoutX="212.0" layoutY="153.0" prefHeight="25.0" prefWidth="346.0" promptText="Patient's Name" />
+      <Label layoutX="70.0" layoutY="284.0" text="Patient's Contact info :" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patientsContactTF" layoutX="212.0" layoutY="279.0" prefHeight="25.0" prefWidth="346.0" promptText="Patient's Contact info " />
+      <Label layoutX="70.0" layoutY="349.0" text="Appointment for Doctor:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="doctorsName_patientsTF" layoutX="212.0" layoutY="344.0" prefHeight="25.0" prefWidth="346.0" promptText="Appointed for Doctor's Name" />
+      <Button fx:id="insert" layoutX="70.0" layoutY="521.0" mnemonicParsing="false" onAction="#insert" prefHeight="25.0" prefWidth="488.0" style="-fx-background-color: #2E626E;" text="Confirm Appointment" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="192.0" layoutY="74.0" text="Call a doctor for Appointment" textFill="#2e626e">
+         <font>
+            <Font name="SansSerif Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="doctorTable" layoutX="622.0" layoutY="115.0" prefHeight="189.0" prefWidth="531.0">
+        <columns>
+            <TableColumn fx:id="doctorsID" prefWidth="69.0" text="Doctor's ID" />
+          <TableColumn fx:id="doctorsName" prefWidth="125.0" text="Doctor's Name" />
+          <TableColumn fx:id="doctersDesig" prefWidth="115.0" text="Doctor's designation" />
+            <TableColumn fx:id="doctorsContact" prefWidth="105.0" text="Doctor's Contact" />
+            <TableColumn fx:id="doctorSchedule" prefWidth="108.0" text="Doctor's Schedule" />
+        </columns>
+      </TableView>
+      <Label layoutX="819.0" layoutY="83.0" text="Doctors Detail List" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="B2H" layoutX="622.0" layoutY="598.0" mnemonicParsing="false" onAction="#b2h" prefHeight="15.0" prefWidth="107.0" style="-fx-background-color: #2E626E;" text="Back to Home" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="exit" layoutX="1046.0" layoutY="598.0" mnemonicParsing="false" onAction="#exit" prefHeight="5.0" prefWidth="107.0" style="-fx-background-color: #2E626E;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TableView fx:id="appointment" layoutX="624.0" layoutY="356.0" prefHeight="200.0" prefWidth="534.0">
+        <columns>
+            <TableColumn fx:id="patientsID" prefWidth="90.0" text="Patient's ID" />
+          <TableColumn fx:id="patientsName" prefWidth="114.0" text="Patient's Name" />
+          <TableColumn fx:id="patientsContact" prefWidth="137.0" text="Patient's Contact" />
+            <TableColumn fx:id="doctorsName_patients" prefWidth="190.0" text="Appointed for " />
+        </columns>
+      </TableView>
+      <Label layoutX="70.0" layoutY="221.0" text="Patient's Serial ID:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patientsIDTF" layoutX="212.0" layoutY="216.0" prefHeight="25.0" prefWidth="346.0" promptText="Patient's Serial ID:" />
+   </children>
+</AnchorPane>

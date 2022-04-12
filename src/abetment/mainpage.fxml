@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abetment.MainpageController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/BG%20FOR%20ALL.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="236.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/19.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="490.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="490.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="728.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/16.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="238.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/18.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="733.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/2.png" />
+         </image>
+      </ImageView>
+      <Button ellipsisString="" layoutX="236.0" layoutY="270.0" mnemonicParsing="false" onAction="#rp" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: ffffff;" text="Receptionist" textAlignment="JUSTIFY" textFill="#f68d64" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button ellipsisString="" layoutX="490.0" layoutY="497.0" mnemonicParsing="false" onAction="#cc" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: ffffff;" text="Classical Control " textAlignment="JUSTIFY" textFill="#f68d64" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button ellipsisString="" layoutX="490.0" layoutY="271.0" mnemonicParsing="false" onAction="#dp" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: ffffff;" text="Doctors Panel " textAlignment="JUSTIFY" textFill="#f68d64" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button ellipsisString="" layoutX="728.0" layoutY="279.0" mnemonicParsing="false" onAction="#mm" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: ffffff;" text="Management" textAlignment="JUSTIFY" textFill="#f68d64" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button ellipsisString="" layoutX="238.0" layoutY="493.0" mnemonicParsing="false" onAction="#admin" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: ffffff;" text="Administrative " textAlignment="JUSTIFY" textFill="#f68d64" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button ellipsisString="" layoutX="733.0" layoutY="493.0" mnemonicParsing="false" onAction="#pharma" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: ffffff;" text="Pharmaceutical" textAlignment="JUSTIFY" textFill="#f68d64" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button ellipsisString="" graphicTextGap="5.0" layoutX="995.0" layoutY="543.0" mnemonicParsing="false" onAction="#exit" prefHeight="9.0" prefWidth="39.0" style="-fx-background-color: ffffff;" text="EXIT" textAlignment="JUSTIFY" textFill="#f58b64" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold" size="10.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

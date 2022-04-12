@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="database.ClassicControl_databaseController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1318.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/database%20bg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="202.0" layoutY="100.0" prefHeight="27.0" prefWidth="296.0" text="Classic Contronls Family " textFill="#2e626e" underline="true">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="197.0" text="Member's ID:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="membersIDTF" layoutX="247.0" layoutY="192.0" prefHeight="25.0" prefWidth="339.0" promptText="Member's ID:" />
+      <Label layoutX="88.0" layoutY="252.0" text="Member's Name:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="membersnameTF" layoutX="245.0" layoutY="247.0" prefHeight="25.0" prefWidth="339.0" promptText="Member's Name:" />
+      <Label layoutX="88.0" layoutY="306.0" text="Member's Designation:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="membersdesigTF" layoutX="245.0" layoutY="301.0" prefHeight="25.0" prefWidth="339.0" promptText="Member's Designation" />
+      <Label layoutX="88.0" layoutY="360.0" text="Member's Contact:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="memberscontactTF" layoutX="245.0" layoutY="355.0" prefHeight="25.0" prefWidth="339.0" promptText="Member's Contact" />
+      <Label layoutX="89.0" layoutY="414.0" text="Member's Schedule:" textFill="#f68d64">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="memberscheduleTF" layoutX="246.0" layoutY="409.0" prefHeight="25.0" prefWidth="339.0" promptText="Member's Schedule" />
+      <Button fx:id="insert" layoutX="90.0" layoutY="506.0" mnemonicParsing="false" onAction="#insert" prefHeight="23.0" prefWidth="492.0" style="-fx-background-color: #2e626e;" text="Add Family Member" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="update" layoutX="90.0" layoutY="548.0" mnemonicParsing="false" onAction="#update" prefHeight="23.0" prefWidth="492.0" style="-fx-background-color: #2e626e;" text="Update Family Members Info" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="delete" layoutX="90.0" layoutY="592.0" mnemonicParsing="false" onAction="#delete" prefHeight="23.0" prefWidth="492.0" style="-fx-background-color: #2e626e;" text="Albida Family Member" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="662.0" layoutY="629.0" mnemonicParsing="false" onAction="#b2h" prefHeight="22.0" prefWidth="162.0" style="-fx-background-color: #2e626e;" text="Back to Home" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="1059.0" layoutY="629.0" mnemonicParsing="false" onAction="#exit" prefHeight="22.0" prefWidth="162.0" style="-fx-background-color: #2e626e;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TableView fx:id="membersTable" layoutX="662.0" layoutY="187.0" prefHeight="423.0" prefWidth="557.0">
+        <columns>
+          <TableColumn fx:id="membersID" prefWidth="89.6666259765625" text="Member's ID" />
+          <TableColumn fx:id="membersname" prefWidth="110.3333740234375" text="Member's Name" />
+            <TableColumn fx:id="membersdesig" prefWidth="123.66668701171875" text="Member's Designation" />
+            <TableColumn fx:id="memberscontact" minWidth="0.0" prefWidth="115.6666259765625" text="Member's Contact" />
+            <TableColumn fx:id="memberschedule" minWidth="0.3333740234375" prefWidth="112.3333740234375" text="Member's Schedule" />
+        </columns>
+      </TableView>
+      <Label layoutX="666.0" layoutY="105.0" prefHeight="27.0" prefWidth="549.0" text="Records of Classic Contronls Family  Members" textFill="WHITE" underline="true">
+         <font>
+            <Font name="SansSerif Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
